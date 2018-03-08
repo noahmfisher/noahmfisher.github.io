@@ -25,8 +25,8 @@
 
         <div class="container">
           <div id="tableofcontents">
-            <i class="fa fa-bars" id="menubutton"></i>
-            <ul>
+            <button id="menubutton" onClick="menuDrop()"><i class="fa fa-bars"></i></button>
+            <ul id="tocDrop" class="menuItems">
               <li><a href="#day1">Hour 1</a></li>
               <li><a href="#day2">Hour 2</a></li>
               <li><a href="#day3">Hour 3</a></li>
@@ -143,6 +143,19 @@
           </div>
         </div>
 
+        <script>
+        /* When the user clicks on the button,
+        toggle between hiding and showing the dropdown content */
+        var tocDrop = document.getElementById("tocDrop");
+        function menuDrop() {
+          if (tocDrop.style.transform = 'translateY -200%') {
+              tocDrop.style.transform = "translateY(0%)";
+          } else {
+            tocDrop.style.transform = "translateY(-200%)";
+          }
+        }
+
+        </script>
 
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
