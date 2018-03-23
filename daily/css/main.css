@@ -110,16 +110,15 @@ textarea {
     float:left;
     text-align: left;
     padding: 0;
-    margin: 0;
+    margin: 1em;
+    transform: translateX(.75em);
   }
 
   #menubutton {
     position: absolute;
-    transform: translateX(5.6em);
-    font-size:2.5vw;
-    border: solid #333;
-    border-width: 1px;
-    border-radius: 3px;
+    transform: translateX(1.8em);
+    font-size:1.5em;
+    z-index: 10;
   }
 
   #menubutton i {
@@ -130,20 +129,35 @@ textarea {
 
   ul {
     transition: 300ms ease;
-    transform: translateY(-200%);
-    text-align: right;
-    position: absolute;
+    opacity: 0;
+    text-align: left;
+    transform: translateX(1.25em) translateY(-100%);
     list-style-type: none;
     padding: 0;
-    margin: 3em;
-    width:5em;
+    font-size: 1em;
   }
 
-  /* #menubutton:hover {
-    ul {
-    transform: translateX(0);
-    }
-  } */
+  li {
+    margin: .2em;
+    padding: .1em;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color:inherit;
+
+  }
+
+  a:visited{
+    color:inherit;
+  }
+
+  .ulDrop {
+    transform: translateX(1.25em) translateY(1.75em);
+    opacity: 1;
+  }
+
 
   #photolist {
     width: 60vw;
@@ -156,20 +170,26 @@ textarea {
     width:100%;
     padding: 0;
     margin: 0;
-    margin: 3em 0em 3em 0em;
+    margin: 0em 0em 1em 0em;
   }
 
   .photo {
     width:100%;
+    display: block;
+    /* max-height: 80vh; */
   }
 
   .hourtext {
-    padding: 0px;
+    padding: .25em 0px 0px .25em;
     margin: 0px;
-    position:absolute;
-    transform: translateX(.1em) translateY(-3.1em);
+    top:-1.5em;
     text-align: left;
-    text-shadow: 0px 0px 3px rgba(255,255,255, .4);
+    position: sticky;
+    background-color: white;
+  }
+
+  hr {
+    margin:0px;
   }
 
 
