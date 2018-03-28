@@ -112,13 +112,13 @@ textarea {
     padding: 0;
     margin: 1em;
     transform: translateX(.75em);
+    z-index: 100;
   }
 
   #menubutton {
     position: absolute;
     transform: translateX(1.8em);
     font-size:1.5em;
-    z-index: 10;
   }
 
   #menubutton i {
@@ -171,12 +171,26 @@ textarea {
     padding: 0;
     margin: 0;
     margin: 0em 0em 1em 0em;
+    z-index: -1;
   }
 
   .photo {
     width:100%;
     display: block;
     /* max-height: 80vh; */
+  }
+
+  .hphoto {
+    width:48%;
+    display: block;
+    float:left;
+    transition: ease 200ms;
+    z-index:100;
+    margin:0px 1% 0px 1%;
+  }
+
+  .hphoto:hover {
+    transform: scale(2);
   }
 
   .hourtext {
@@ -186,13 +200,12 @@ textarea {
     text-align: left;
     position: sticky;
     background-color: white;
+    z-index: 1;
   }
 
   hr {
     margin:0px;
   }
-
-
 
 
 
