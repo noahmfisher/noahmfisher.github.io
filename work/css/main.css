@@ -97,12 +97,30 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.container {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 #sidebar {
+  margin:0;
   float:left;
+  width:10vh;
+  position: absolute;
+}
+
+#sidebar ul {
+  list-style-type: none;
 }
 
 #content {
-  
+  margin:5vh 0 0 0;
+  height:90vh;
+  width:70vw;
+  min-width: 30em;
+  margin: auto;
+  padding: 0;
 }
 
 
