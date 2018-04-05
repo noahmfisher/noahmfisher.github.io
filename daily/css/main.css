@@ -203,6 +203,7 @@ textarea {
     background: none;
     width:50px;
     height:50px;
+    pointer-events: none;
   }
 
   .bar {
@@ -212,6 +213,7 @@ textarea {
     margin:7px;
     display:block;
     transition: ease 400ms;
+    z-index: -100;
   }
 
   .topBC {

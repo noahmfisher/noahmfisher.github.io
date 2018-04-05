@@ -16,7 +16,7 @@ function menuAnim() {
     botB.classList.add('botBC');
   }
   if (!event.target.matches('#menubutton')) {
-    for (i = 0; i < navs.length; i++) {
+    for ( i < navs.length; i = 0; i++) {
       if (openNav.classList.contains('show')) {
         openNav.classList.remove('show');
       }
