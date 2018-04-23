@@ -10,6 +10,8 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
@@ -24,33 +26,39 @@
 
         <!-- Add your site or application content here -->
 
-        <div class="container">
-          <div id="tableofcontents">
-            <a id="menubutton"><i class="fa fa-bars"></i></a>
-            <ul id="tocDrop" class="menuItems">
-              <li><a href="#day1">Hour 1</a></li>
-              <li><a href="#day2">Hour 2</a></li>
-              <li><a href="#day3">Hour 3</a></li>
-              <li><a href="#day4">Hour 4</a></li>
-              <li><a href="#day5">Hour 5</a></li>
-              <li><a href="#day6">Hour 6</a></li>
-              <li><a href="#day7">Hour 7</a></li>
-              <li><a href="#day8">Hour 8</a></li>
-              <li><a href="#day9">Hour 9</a></li>
-              <li><a href="#day10">Hour 10</a></li>
-            </ul>
+
+        <div id="nav">
+          <button onClick="menuAnim()" id="menubutton">
+            <div id="topB" class="bar"></div>
+            <div id="midB" class="bar"></div>
+            <div id="botB" class="bar"></div>
+          </button>
+          <div id="navDrop" class="nav-content">
+            <a href="#day1">Hour 1</a>
+            <a href="#day2">Hour 2</a>
+            <a href="#day3">Hour 3</a>
+            <a href="#day4">Hour 4</a>
+            <a href="#day5">Hour 5</a>
+            <a href="#day6">Hour 6</a>
+            <a href="#day7">Hour 7</a>
+            <a href="#day8">Hour 8</a>
+            <a href="#day9">Hour 9</a>
+            <a href="#day10">Hour 10</a>
           </div>
+        </div>
 
-
+          <div class="header">
+            <div id="logo"></div>
+          </div>
 
           <div id="photolist">
             <div class="day" id="day1">
               <div class="hourtext">
                 <h2>Hour 1 - 03/03/18 12:00pm</h2>
               </div>
-              <img class="hphoto" id="h11" src="img/1.jpg" />
-              <img class="hphoto" id="h12" src="img/1-2.jpg" />
-              <p>I went back home to Pennsylvania, so I went shooting with a friend in Harrisburg. We started in the parking garage</p>
+              <img class="hphoto" src="img/1.jpg" style="margin-bottom:10px" />
+              <img class="hphoto" src="img/1-2.jpg" style="margin-bottom:20px" />
+              <p>This weekend I went back home to Pennsylvania, so I went shooting with a friend in Harrisburg. We started in the parking garage in downtown and walked around.</p>
             </div>
 
             <hr />
@@ -60,7 +68,7 @@
                 <h2>Hour 2 - 03/03/18 1:00pm</h2>
               </div>
               <img class="photo" src="img/2.jpg" />
-              <p>My friend Justin doing anything to get the shot</p>
+              <p>While in the lower leves we took a few photos. Here's my friend Justin doing anything to get the shot</p>
             </div>
 
             <hr />
@@ -69,8 +77,8 @@
               <div class="hourtext">
                 <h2>Hour 3 - 03/03/18 2:00pm</h2>
               </div>
-              <img class="photo" src="img/3.jpg" />
-              <p>My favorite shot from the roll, the top floor of the parking garage</p>
+              <img class="vphoto" src="img/3.jpg" />
+              <p>My favorite shot from the roll, from the top floor of the parking garage.</p>
             </div>
 
             <hr />
@@ -79,9 +87,9 @@
               <div class="hourtext">
                 <h2>Hour 4 - 03/03/18 3:00pm</h2>
               </div>
-              <img class="hphoto" src="img/4.jpg" />
-              <img class="hphoto" src="img/4.jpg" />
-              <p>Walking around Justin and I found a wedding(?) setup in front of a decrepit building.</p>
+              <img class="hphoto" src="img/4-1.jpg" />
+              <img class="hphoto" src="img/4-2.jpg" />
+              <p>Walking around an area outside Harrisburg, Justin and I found a funeral(?) setup in front of a decrepit building.</p>
             </div>
 
             <hr />
@@ -91,7 +99,7 @@
                 <h2>Hour 5 - 03/03/18 4:00pm</h2>
               </div>
               <img class="photo" src="img/5.jpg" />
-              <p>Odd warehouse/antique store. Person at the cash register gave me a the creeps. Larger white guy, wearing a leopard print fedora and bright pink jacket. He must’ve been on drugs or his brain has been fried by drugs. Interesting guy, didn’t buy anything.</p>
+              <p>An Odd warehouse/antique store we came across called Atomic Warehouse. The owner at the cash register gave me a the creeps. Larger white guy, wearing a leopard print fedora and bright pink jacket. He must’ve been on drugs or his brain has been fried by drugs. Interesting guy, didn’t buy anything.</p>
             </div>
 
             <hr />
@@ -101,7 +109,7 @@
                 <h2>Hour 6 - 03/03/18 5:00pm</h2>
               </div>
               <img class="photo" src="img/6.jpg" />
-              <p>Getting late into the day, across the street while taking this shot a couple in a car called out to us to have their picture taken</p>
+              <p>Getting later in the day, across the street while taking this shot a couple in a car called out to us to have their picture taken. Pictured is the girl (I didn't catch their names).</p>
             </div>
 
             <hr />
@@ -110,8 +118,9 @@
               <div class="hourtext">
                 <h2>Hour 7 - 03/03/18 6:00pm</h2>
               </div>
-              <img class="photo" src="img/7.jpg" />
-            <p>The couple modelling for their photos. As I was talking to them they said “You guys aren’t scared to be around here? You’re going to make it in this world.”</p>
+              <img class="hphoto" src="img/7-1.jpg" />
+              <img class="hphoto" src="img/7-2.jpg" />
+            <p>The couple modelling for their repesctive photos. As I was talking to them they said “You guys aren’t scared to be around here? You’re going to make it in this world.”</p>
             </div>
 
             <hr />
@@ -121,7 +130,7 @@
                 <h2>Hour 8 - 03/03/18 7:00pm</h2>
               </div>
               <img class="photo" src="img/8.jpg" />
-              <p>Back in my hometown eating some Chick Fil A. Since I’m vegetarian I can’t eat most of their menu, but I can still enjoy the fries.</p>
+              <p>After a long day of walking, we went back to my hometown to get some Chick Fil A. Since I’m vegetarian I can’t eat most of their menu, but I can still enjoy the fries.</p>
             </div>
 
             <hr />
@@ -131,7 +140,7 @@
                 <h2>Hour 9 - 03/03/18 8:00pm</h2>
               </div>
               <img class="photo" src="img/9.jpg" />
-              <p>Justin’s house, his family has two Dachshunds and his father loves them. He has several plush toys of wiener dogs.</p>
+              <p>At Justin’s house, his family has two Dachshunds and his father loves them. He has several plush toys of wiener dogs around the house.</p>
             </div>
 
             <hr />
@@ -141,7 +150,7 @@
                 <h2>Hour 10 - 03/03/18 9:00pm</h2>
               </div>
               <img class="photo" src="img/10.jpg" />
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at tellus aliquet, viverra turpis a, tristique lacus. Nullam convallis volutpat faucibus. Ut fringilla malesuada metus vitae feugiat. Aliquam ac arcu eu mi porta vehicula quis eget enim. Aenean non lacus vel massa ullamcorper faucibus a sed neque. Mauris dignissim diam non elementum vulputate. Donec imperdiet, ante sed fringilla sodales, tellus ex bibendum neque, sit amet egestas dolor leo pulvinar tellus. Etiam et eros at dui vestibulum vulputate a at arcu. Integer molestie elit vel eros luctus, et bibendum ligula tincidunt. Vivamus sem orci, eleifend in libero non, semper finibus elit. Phasellus sed fringilla dui. Proin congue tellus at orci malesuada, sit amet rutrum neque imperdiet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a nulla sed ligula efficitur hendrerit non vitae nulla.</p>
+              <p>By now, Jusin and I were both tired so we parted ways and I passed out. Unfortunately, I forgot to take a photo of my bed. So instead, here is a recreation by Ferris Halemeh.</p>
             </div>
           </div>
         </div>

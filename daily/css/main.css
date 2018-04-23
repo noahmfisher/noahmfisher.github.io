@@ -97,66 +97,42 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  * {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+
   .container {
     margin:0;
     padding: 0;
     width:100%;
     height:100%;
-    font-family: 'Open Sans', sans-serif;
   }
 
-  #tableofcontents {
-    position: fixed;
-    float:left;
-    text-align: left;
+  .header {
+    width: 60vw;
+    min-width: 30em;
+    margin: auto;
     padding: 0;
-    margin: 1em;
-    transform: translateX(.75em);
-    z-index: 100;
   }
 
-  #menubutton {
-    position: absolute;
-    transform: translateX(1.8em);
-    font-size:1.5em;
+  #logo {
+    margin: 2em auto 0 auto;
+    width: 300px;
+    height: 150px;
+    background-image:url("../img/logo.png");
+    background-size:contain;
+    background-repeat: no-repeat;
   }
 
-  #menubutton i {
-    padding:0;
-    margin:0;
-    color: #333;
-  }
-
-  ul {
-    transition: 300ms ease;
-    opacity: 0;
-    text-align: left;
-    transform: translateX(1.25em) translateY(-200%);
-    list-style-type: none;
-    padding: 0;
-    font-size: 1em;
-  }
-
-  li {
-    margin: .2em;
-    padding: .1em;
+  #logo h1 {
     text-align: center;
   }
 
-  a {
-    text-decoration: none;
-    color:inherit;
-
-  }
 
   a:visited{
     color:inherit;
   }
 
-  .ulDrop {
-    transform: translateX(1.25em) translateY(1.75em);
-    opacity: 1;
-  }
 
 
   #photolist {
@@ -176,8 +152,16 @@ textarea {
 
   .photo {
     width:100%;
-    display: block;
+    /* display: block; */
     /* max-height: 80vh; */
+  }
+
+  .vphoto {
+    width:38%;
+    display: block;
+    transition: ease 200ms;
+    z-index:100;
+    margin:auto;
   }
 
   .hphoto {
@@ -186,15 +170,12 @@ textarea {
     float:left;
     transition: ease 200ms;
     z-index:100;
-    margin:0px 1% 0px 1%;
+    margin:0px 1% 10px 1%;
   }
 
   .hphoto:hover{
     transform: scale(2);
-  }
-
-  #h11:hover, #h12:hover{
-    transform: scale(2) translateY(25%);
+    box-shadow: 0px 0px 2px black;
   }
 
   .hourtext {
@@ -213,8 +194,67 @@ textarea {
     margin-top: 3px;
   }
 
-  .explode {
+  #menubutton {
+    margin: auto;
+    position: absolute;
+    transform:translateX(54px);
+    padding: 0;
+    border: none;
+    background: none;
+    width:50px;
+    height:50px;
+    pointer-events: none;
+  }
 
+  .bar {
+    background-color: black;
+    width: 35px;
+    height: 5px;
+    margin:7px;
+    display:block;
+    transition: ease 400ms;
+    /* z-index: -100; */
+  }
+
+  .topBC {
+    transform: translateX(0) translateY(12px) rotate(.125turn);
+
+  }
+
+  .midBC {
+    opacity:0;
+  }
+
+  .botBC {
+    transform: translateX(0) translateY(-12px) rotate(-.125turn);
+  }
+
+  #nav {
+    position: fixed;
+    display: inline-block;
+    transform: translateX(25px) scale(.80);
+  }
+
+  .nav-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    overflow: auto;
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+    /* z-index: 100000000; */
+    transform: translateY(60px) translateX(30%);
+    text-align: center;
+  }
+
+  .nav-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .show {
+    display:block;
   }
 
 
