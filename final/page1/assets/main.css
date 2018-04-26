@@ -1,0 +1,56 @@
+body {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  overflow: hidden;
+  margin:0;
+  padding:0;
+}
+
+.container {
+  overflow: hidden;
+  margin:0;
+  padding:0;
+}
+
+#taskbar {
+  position: absolute;
+  padding:0;
+  margin:0;
+  width:100%;
+  bottom:0;
+  left:0;
+  z-index: -100;
+}
+
+.icon {
+  width:4%;
+  padding:10px;
+  margin:1%;
+}
+
+.icon img {
+  width: 100%;
+}
+
+.icon p {
+  text-align: center;
+  color:white;
+  text-shadow: 0px 0px 2px black;
+}
+
+#taskbarclick {
+  position: absolute;
+  padding:0;
+  margin:0;
+  bottom:0;
+  left:0;
+  display:block;
+  width: 8%;
+  height: 4%;
+}
+
+#startmenu {
+  position: absolute;
+  width:25%;
+  bottom:4%;
+}
