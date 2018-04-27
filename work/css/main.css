@@ -130,6 +130,68 @@ textarea {
   line-height: 50vh;
 }
 
+#menubutton {
+  margin: auto;
+  position: absolute;
+  transform:translateX(54px);
+  padding: 0;
+  border: none;
+  background: none;
+  width:50px;
+  height:50px;
+  pointer-events: none;
+}
+
+.bar {
+  background-color: black;
+  width: 35px;
+  height: 5px;
+  margin:7px;
+  display:block;
+  transition: ease 400ms;
+  /* z-index: -100; */
+}
+
+.topBC {
+  transform: translateX(0) translateY(12px) rotate(.125turn);
+
+}
+
+.midBC {
+  opacity:0;
+}
+
+.botBC {
+  transform: translateX(0) translateY(-12px) rotate(-.125turn);
+}
+
+#nav {
+  position: fixed;
+  display: inline-block;
+  transform: translateX(25px) scale(.80);
+}
+
+.nav-content {
+  display: none;
+  position: absolute;
+  min-width: 100px;
+  overflow: auto;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.1);
+  /* z-index: 100000000; */
+  transform: translateY(60px) translateX(30%);
+  text-align: center;
+}
+
+.nav-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.show {
+  display:block;
+}
 
 
 

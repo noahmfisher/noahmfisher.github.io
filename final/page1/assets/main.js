@@ -6,3 +6,5 @@ function showTask() {
         x.style.display = "block";
     }
 }
+
+new Date(hours, minutes);
