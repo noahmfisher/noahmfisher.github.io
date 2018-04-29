@@ -123,10 +123,10 @@ body {
 .iexplorerurl {
   position:absolute;
   width:574px;
-  height:15px;
+  height:14px;
   left:75px;
-  top:96px;
-  /* border: red 1px; */
+  top:98px;
+  border: none;
 }
 
 .closeX {
