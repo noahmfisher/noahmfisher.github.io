@@ -76,9 +76,9 @@ a:hover {
 
 .footer {
   font-size:.6em;
-  position: absolute;
-  left:.1em;
-  bottom:-10px;
+  position: fixed;
+  line-height:0;
   padding:0px;
   margin: 0px;
+  margin-left:5px;
 }

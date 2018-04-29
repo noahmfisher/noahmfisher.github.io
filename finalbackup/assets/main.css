@@ -101,7 +101,7 @@ body {
 }
 
 #iexplorer {
-  display:none;
+  /* display:none; */
   position: absolute;
   top:0;
   left:0;
@@ -118,15 +118,14 @@ body {
   background-color:white;
   left:4px;
   top:119px;
+  width:772px;
+  height:405px;
 }
 
 .iexplorerurl {
   position:absolute;
-  width:574px;
-  height:15px;
-  left:75px;
-  top:96px;
-  /* border: red 1px; */
+  top:30px;
+  width:772px;
 }
 
 .closeX {

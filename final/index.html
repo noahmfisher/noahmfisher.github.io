@@ -4,32 +4,51 @@
     <link rel="stylesheet" type="text/css" href="assets/main.css">
   </head>
   <body>
-    <div id="stapler"><p id="staplertext">STAPLER</p></div>
-    <div id="postits">
-      <div class="post" id="postit1">
-        <img src="assets/postit.svg" />
-        <h1>Issues</h1>
+    <div class="container">
+
+<!--
+    TO DO:
+    Make taskbar a div !DONE!
+    Center text on clock !DONE!
+    fix start button size scale !DONE!
+    Fix window !DONE!
+    Make it so only the top bar move the window
+    More Icons to Open Websites (Internet Explorer)
+-->
+
+
+
+
+      <div class="icons">
+        <div class="icon" onclick="openComputer()"><img id="my" src="assets/mc.png" /><p>My Computer</p></div>
+        <div class="icon" onclick="openIExplorer()"><img id="my" src="assets/internetExplorer.png" /><p>Internet Explorer</p></div>
       </div>
-      <div class="post" id="postit2">
-        <img src="assets/postit.svg" />
-        <h1>About</h1>
+
+
+
+      <!-- <img src="assets/explorer.png"> -->
+
+      <div id="explorer">
+        <div class="closeX" onClick="openComputer()"></div>
       </div>
-      <div class="post" id="postitlogo">
-        <img src="assets/stackpost.svg" />
+
+      <div id="iexplorer">
+        <div class="closeX" onClick="openIExplorer()"></div>
+        <input value="http://noahmfisher.github.io" class="iexplorerurl"></input>
+        <iframe class="iexplorerif" scrolling="yes" width="772" height="405" src="http://noahmfisher.github.io"></iframe>
       </div>
-      <div class="post" id="postit3">
-        <img src="assets/postit.svg" />
-        <h1>Story</h1>
+
+
+      <div id="taskbardiv">
+        <div id="taskbar">
+          <p id="time">12:00 pm</p>
+        </div>
+        <div onclick="openStart()" id="startbutton"></div>
+        <img id="startmenu" src="assets/startmenu.png" />
       </div>
-      <div class="post" id="postit4">
-        <img src="assets/postit.svg" />
-        <h1>Forum</h1>
-      </div>
+
+
+      <script src="assets/main.js"></script>
     </div>
-
-
-
-
-    <script src="assets/main.js"></script>
   </body>
 </html>
