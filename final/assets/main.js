@@ -25,8 +25,65 @@ function openIExplorer() {
     }
 }
 
+
+function openIEPower() {
+    var x = document.getElementById("iepower");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+function openIEOrigin() {
+    var x = document.getElementById("ieorigin");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+function openIECity() {
+    var x = document.getElementById("iecity");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+function openIEWeakness() {
+    var x = document.getElementById("ieweakness");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
+
+function openIEArchenemy() {
+    var x = document.getElementById("iearchenemy");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+
 dragElement(document.getElementById("explorer"));
 dragElement(document.getElementById("iexplorer"));
+dragElement(document.getElementById("iepower"));
+dragElement(document.getElementById("ieorigin"));
+dragElement(document.getElementById("iecity"));
+dragElement(document.getElementById("ieweakness"));
+dragElement(document.getElementById("iearchenemy"));
+
+
 
 
 function dragElement(elmnt) {
@@ -60,9 +117,3 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-
-
-
-
-
-new Date(hours, minutes);

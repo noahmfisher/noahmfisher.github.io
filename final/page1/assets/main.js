@@ -1,30 +1,38 @@
 function openStart() {
-    var x = document.getElementById("startmenu");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+  var x = document.getElementById("startmenu");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 
 function openComputer() {
-    var x = document.getElementById("explorer");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+  var x = document.getElementById("explorer");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 
 function openIExplorer() {
-    var x = document.getElementById("iexplorer");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-    } else {
-        x.style.display = "block";
-    }
+  var x = document.getElementById("iexplorer");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
 }
 
+function smHoverOpen() {
+  var x = document.getElementById("allprograms");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
 
 dragElement(document.getElementById("explorer"));
 dragElement(document.getElementById("iexplorer"));

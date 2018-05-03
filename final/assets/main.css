@@ -82,9 +82,35 @@ body {
 
 #startmenu {
   position: absolute;
-  width:30%;
+  width:380px;
+  height:478px;
+  background-image:url("startmenu.png");
+  background-size:cover;
   bottom:6%;
   display:none;
+}
+
+#smhover {
+  position:absolute;
+  /* background-color: red; */
+  width:187px;
+  height: 35px;
+  bottom:41px;
+  left:2px;
+  z-index: 5;
+}
+
+
+#allprograms {
+  display:none;
+  position:absolute;
+  width:217px;
+  height:284px;
+  background-image:url("allprograms.png");
+  background-size:cover;
+  bottom:82px;
+  left:175px;
+  z-index:10;
 }
 
 #explorer {
@@ -101,6 +127,71 @@ body {
 }
 
 #iexplorer {
+  display:none;
+  position: absolute;
+  top:0;
+  left:0;
+  padding:0;
+  margin:0;
+  width:785px;
+  height:556px;
+  background-image: url("iexplorer.png");
+  background-size: 100% 100%;
+}
+
+#iepower {
+  display:none;
+  position: absolute;
+  top:0;
+  left:0;
+  padding:0;
+  margin:0;
+  width:785px;
+  height:556px;
+  background-image: url("iexplorer.png");
+  background-size: 100% 100%;
+}
+
+#ieorigin {
+  display:none;
+  position: absolute;
+  top:0;
+  left:0;
+  padding:0;
+  margin:0;
+  width:785px;
+  height:556px;
+  background-image: url("iexplorer.png");
+  background-size: 100% 100%;
+}
+
+#iecity {
+  display:none;
+  position: absolute;
+  top:0;
+  left:0;
+  padding:0;
+  margin:0;
+  width:785px;
+  height:556px;
+  background-image: url("iexplorer.png");
+  background-size: 100% 100%;
+}
+
+#ieweakness {
+  display:none;
+  position: absolute;
+  top:0;
+  left:0;
+  padding:0;
+  margin:0;
+  width:785px;
+  height:556px;
+  background-image: url("iexplorer.png");
+  background-size: 100% 100%;
+}
+
+#iearchenemy {
   display:none;
   position: absolute;
   top:0;

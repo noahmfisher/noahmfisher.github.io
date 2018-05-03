@@ -1,0 +1,25 @@
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  /* float:left; */
+  line-height: 75px;
+  margin-top:20px;
+  margin-left: 70px;
+  margin-bottom: 0px;
+}
+
+.h1logo {
+  float:left;
+  height:50px;
+  /* margin:10px; */
+  margin-bottom: 0px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+hr {
+  margin:0px;
+  border-color:black;
+}
