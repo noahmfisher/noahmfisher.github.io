@@ -34,8 +34,8 @@ body {
 
 .icon {
   float:left;
-  width:5%;
-  height:85px;
+  width:4%;
+  height:auto;
   padding:25px;
   margin:0%;
 }
@@ -47,7 +47,7 @@ body {
 }
 
 .icon p {
-  font-size:16px;
+  font-size:1em;
   text-align: center;
   margin:5px 0 0 0;
   color: white;
