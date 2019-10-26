@@ -1,0 +1,152 @@
+// javascript menu builder
+// tkennedy@lycos-inc.com
+// versions:
+// 0.5: regexp tomfoolery
+// 1.0: replication of perl script to user-end
+// 1.1: regexp tomfoolery removed -- logic to clunky and cumbersome
+// 1.2: angelfire specific menu seperation code added
+// 1.3: af specific code generalized for use on other sites without modification to menu builde code, only configuration file
+// notes:
+// this script must be used in conjunction with a site specific datafile in javascript format
+
+function findCategory() {
+    rawestCategory = document.location;
+    expression = /.*\/(.*)$/;
+    rawCategory = expression.exec(rawestCategory);
+    strippedCategory = rawCategory[1];
+    dotSep = strippedCategory.indexOf(".");
+    category = strippedCategory.substr(0,dotSep);
+    return category;
+}
+
+
+//print out menu header, beginning of table
+document.write(menuHead+"\n");
+
+for(i=0; i < arrayLength; i++) {
+    //reset switches
+    var currentURL = urls[i];
+    var name = longNames[i];
+    var currentClass = normalClass;
+    var currentLinkClass = normalLinkClass;
+    var arrowSwitch = nonArrow;
+    var currentCategory = shortNames[i];
+    
+    //check catagory and set variables appropriately, also check for seperator row.  print out appropriate table row
+    if (currentCategory == category) {
+        currentClass = highlightClass;
+        currentLinkClass = highlightLinkClass;
+        arrowSwitch = arrow;
+	document.write(menuRow1+currentClass+menuRow2+arrowSwitch+menuRow3+currentClass+menuRow4+currentURL+menuRow5+currentLinkClass+menuRow6+name+menuRow7);
+    } else if (currentCategory == "sep") {
+    	//if we're at the on lycos section, print out the blue seperator bar
+    	if (sepNames[currentSep] == seperateAt) {
+		document.write(sectionSeperator);
+	}
+	//write out seperator with sepName
+	document.write(sepStart+sepNames[currentSep]+sepEnd);
+	currentSep++;
+    } else {
+    	document.write(menuRow1+currentClass+menuRow2+arrowSwitch+menuRow3+currentClass+menuRow4+currentURL+menuRow5+currentLinkClass+menuRow6+name+menuRow7);
+    }
+}
+
+//close tables and menu.  for af, the menu table does not close here, as the top 5 needs to be included, which must be done via SSI
+document.write(menuFoot);
+
+
+
+//entertainment code
+var popdefs = ",toolbar=no,directories=no,location=no,status=no,scrollbars=no,resize=no,menubar=no";
+
+function pop(section, player, content, type, adtag)
+
+{
+		var szLink = "https://web.archive.org/web/20030207080119/http://tv.lycos.com/ot_frameset.asp?s=" + section + "&player=" + player + "&c=" + content + "&t=" + type + "&a=" + adtag;
+			
+		window.open(szLink, "entplayer", "height=600,width=800,toolbar=no,directories=no,location=no,status=no,scrollbars=no,resize=no,menubar=no");
+		return false;
+}
+
+//pop function for special features -- backward compatibile with old player.
+function pop_sf(content, artist, type, adtag)
+{
+		var szLink = "https://web.archive.org/web/20030207080119/http://music.lycos.com/features/include/frameset.asp?a=" + artist + "&t=" + type + "&c=" + content;
+			
+		if(adtag != "") szLink += "&adtag=" + adtag;
+
+		window.open(szLink, "player", "height=455,width=485" + popdefs);
+		return false;
+}
+
+
+
+
+//open window function
+function openNewWin(link, width, height){
+	var afWindow = window.open(link,"afWin","toolbar=0,location=0,directories=0,status=0,menubar=0,scrollbars=1,resizable=0,width="+width+",height="+height);
+}
+
+
+
+
+//tv player functions
+function openTVPlayerNoContent()
+{
+ 	var tvPlayer = window.open("https://web.archive.org/web/20030207080119/http://tv.lycos.com/default.asp", "entplayer", "height=600,width=800,toolbar=0,directories0,location=0,status=0,scrollbars= 1,resize=1,menubar=0,copyhistory=1");
+}
+
+function openTVPlayerContent(section, content, playerID)
+{
+	var tvPlayer = window.open("https://web.archive.org/web/20030207080119/http://tv.lycos.com/default.asp?s="+section+"&c="+content+"&t=video&player="+playerID, "entplayer", "height=600,width=800,toolbar=no,directories=no,location=no,status=no,scroll bars=no,resize=yes,menubar=no");
+}
+
+
+
+
+//help pop up function
+	function isIE4() {
+		return( navigator.appName.indexOf("Microsoft") != -1 && (navigator.appVersion.charAt(0)=='4') );
+	}
+
+	function launchHelp(helpurl) {
+		HelpWin = window.open(helpurl,
+'HelpWindow','toolbar=yes,location=no,directories=no,status=yes,menubar=no,scrollbars=yes,resizable=yes,copyhistory=no,width=500,height=500');
+
+		if( ! isIE4() ) {
+			if (HelpWin.focus) {
+				HelpWin.focus();
+			}
+		}
+
+		if (HelpWin.focus!=null  && navigator.userAgent.indexOf('MSIE4')<0)
+		  {
+		   HelpWin.focus();
+		  }
+
+		if (HelpWin.opener == null) HelpWin.opener = window;
+		HelpWin.opener.name = "LycosMain";
+	}
+
+
+/*
+     FILE ARCHIVED ON 08:01:19 Feb 07, 2003 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:56:38 Oct 26, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  esindex: 0.008
+  RedisCDXSource: 0.463
+  exclusion.robots: 0.121
+  captures_list: 302.403
+  PetaboxLoader3.resolve: 113.111 (2)
+  load_resource: 108.293
+  CDXLines.iter: 11.384 (3)
+  exclusion.robots.policy: 0.112
+  PetaboxLoader3.datanode: 280.315 (4)
+  LoadShardBlock: 286.492 (3)
+*/

@@ -1,0 +1,118 @@
+//definitions for angelfire left menu builder javascript script
+
+//arrays.  sep is used to create the section seperators.  all values in each array must align correctly.  shortnames is constructed by taking longName[i] and removing all spaces, non A-Za-z characters and lowercasing.  each array must start with sep so the code will print out the main menu title
+
+longNames = new Array(
+					"sep",
+					"Angelfire Home",
+					"About",	
+					"Build",
+					"Cool Pages",
+					"My Account",
+					"What's New",
+					"Web Shell",
+					"sep",
+					"Celebrities",
+					"Comics &amp; Anime",
+					"Games",
+					"Movies",
+					"Music",
+					"Sports",
+					"TV",
+					"sep",
+					"Angelfire E-Mail",
+					"Chat",
+					"Clubs",
+					"Message Boards",
+					"Instant Messaging",
+					"Find a Date"
+					);
+
+shortNames = new Array(
+					"sep",
+					"angelfirehome",
+					"about",
+					"build",
+					"coolpages",
+					"myaccount",
+					"whatsnew",
+					"webshell",
+					"sep",
+					"celebrities",
+					"comicsanime",
+					"games",
+					"movies",
+					"music",
+					"sports",
+					"tv",
+					"sep",
+					"angelfireemail",
+					"chat",
+					"clubs",
+					"messageboards",
+					"instantmessaging",
+					"findadate"
+					);
+
+urls = new Array(
+					"sep",
+					"/index.html",
+					"/doc/general/about.html",
+					"/doc/zones/build.html",
+					"/doc/best/",
+					"/cgi-auth/membership/my_account",
+					"/doc/general/news.html",
+					"/cgi-auth/webshell",
+					"sep",
+					"/doc/zones/celebrities.html",
+					"/doc/zones/comics.html",
+					"/doc/zones/games.html",
+					"/doc/zones/movies.html",
+					"/doc/zones/music.html",
+					"/doc/zones/sports.html",
+					"/doc/zones/tv.html",
+					"sep",
+					"https://web.archive.org/web/20030207074446/http://email.angelfire.mailcity.lycos.com/",
+					"https://web.archive.org/web/20030207074446/http://clubs.lycos.com/live/ChatRooms/ChatSubCat.asp?CG=4e4c7luv6va13ak40188mmh7t0&Area=1",
+"https://web.archive.org/web/20030207074446/http://clubs.lycos.com/live/Directory/ClubSubCat.asp?CG=4e4c7luv6va13ak40188mmh7t0&Area=2",
+					"https://web.archive.org/web/20030207074446/http://clubs.lycos.com/live/Annotation/BoardsCat.asp?Area=3&CG=4e4c7luv6va13ak40188mmh7t0",
+					"https://web.archive.org/web/20030207074446/http://clubs.lycos.com/live/Main/dload.asp","https://web.archive.org/web/20030207074446/http://www.matchmaker.com/selectcommunity?rs=200011"
+					);
+
+
+sepNames = new Array(
+					"ON ANGELFIRE",
+					"ZONES",
+					"ON LYCOS"
+					);
+
+arrayLength = shortNames.length;
+
+//set up logic for seperators and code for creating a menu break (if there is one)
+currentSep = 0;
+sectionSeperator = "<tr><td colspan=\"2\" class=\"af_darkblue\" bgcolor=\"#00009A\" height=\"5\"> </td></tr>";
+seperateAt = "ON LYCOS";
+sepEnd = "</b></td></tr>";
+sepStart = "<tr><td colspan=\"2\" class=\"left_menu_title\"><b>";
+
+
+
+//html, image, and class declarations
+arrow = "<img src=\"http://af.lygo.com/d/left_menu/right_arrow.gif\" width=\"4\" height=\"7\">";
+nonArrow = "&nbsp;";
+normalClass = "left_menu";
+normalLinkClass = "left_link";
+highlightClass = "left_menu_selected";
+highlightLinkClass = normalLinkClass;
+currentClass = normalClass;
+currentLinkClass = normalClass;
+arrowSwitch = nonArrow;
+menuHead = "<table cellpadding=\"0\" cellspacing=\"0\" border=\"0\" width=\"138\">";
+menuFoot = "<tr><td colspan=\"2\" class=\"left_menu_title\"><b>SEARCH</b></td></tr><tr><td colspan=\"2\" class=\"left_menu_grey\"><form action=\"/cgi-bin/choose_search\" method=\"POST\"><input type=\"hidden\" name=\"matchmode\" value=\"and\"><select name=\"engine\" size=\"1\"><option value=\"mixed\">Angelfire</option><option value=\"lycos\" SELECTED>with Lycos</option><option value=\"hotbot\">with HotBot</option><option value=\"mp3\">for MP3s</option><option value=\"rich\">for media</option></select><p><input type=\"text\" size=\"12\" maxlength=\"50\" name=\"query\"><p><input type=\"submit\" name=\"submit\" value=\"Go!\"></form></td></tr><tr><td colspan=\"2\" class=\"left_menu_spacer\" height=\"1\"></td></tr>";
+menuRow1 = "<tr><td class=\"";
+menuRow2 = "\" width=\"16\">";
+menuRow3 = "</td><td class=\"";
+menuRow4 = "\"><a href=\"";
+menuRow5 = "\" class=\"";
+menuRow6 = "\">";
+menuRow7 = "</a></td></tr><tr><td colspan=\"2\" class=\"left_menu_spacer\" height=\"1\"></td></tr>";

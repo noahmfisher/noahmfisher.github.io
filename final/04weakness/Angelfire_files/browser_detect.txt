@@ -1,0 +1,31 @@
+//browser detection and linking to appropriate stylesheet based on browser version.  Netscape 4 gets netscape specific CSS, all others (including netscape 6) gets compliant CSS
+var bNameLong = navigator.appName;
+var bVer = parseInt(navigator.appVersion);
+var bName = bNameLong.substr(0,4);
+
+if ((bVer == 4) && (bName == "Nets")) {
+	document.write("<link rel=\"stylesheet\" type=\"text\/css\" href=\"http://af.lygo.com/d/css/netscape.css\" title=\"main\">");
+} else {
+	document.write("<link rel=\"stylesheet\" type=\"text\/css\" href=\"http://af.lygo.com/d/css/ie.css\" title=\"main\">");
+}
+/*
+     FILE ARCHIVED ON 04:30:58 Dec 09, 2002 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:56:39 Oct 26, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  exclusion.robots: 0.251
+  LoadShardBlock: 31.742 (3)
+  RedisCDXSource: 46.404
+  exclusion.robots.policy: 0.231
+  load_resource: 277.853
+  esindex: 0.012
+  PetaboxLoader3.resolve: 226.604
+  PetaboxLoader3.datanode: 70.056 (4)
+  captures_list: 95.042
+  CDXLines.iter: 11.398 (3)
+*/

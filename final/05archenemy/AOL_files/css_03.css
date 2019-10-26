@@ -1,0 +1,62 @@
+body{font-family:arial,helvetica,sans-serif;background-color:#FFFFFF;}
+.nav_top{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/toolbar_tile_com.gif);background-repeat:repeat-x;}
+.formgoogle{font-weight:normal;font-size:.7em;width:221px;margin-right:2px;}
+.hspacer{height:6px;width:1px;}
+.signin_left{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/blue_left.gif);width:9px;height:298px;background-repeat:no-repeat;}
+.signin_center{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/blue_center.gif);width:236px;height:298px;background-repeat:repeat-x;margin-left:9px;}
+.signin_right{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/blue_right.gif);width:9px;height:298px;background-repeat:no-repeat;font-size:.1em;}
+.signin_form{font-weight:normal;width:87px;height:21px;font-size:.7em;}
+.signin_img,.shop_search_img{margin-bottom:-4px;}
+.signin_mailaimbg{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/blank_button_236x42.gif);width:236px;height:42px;background-repeat:no-repeat;margin-top:4px;margin-bottom:2px;}
+.signin_iconblk{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/mod_icon_tray_236x98.gif);width:236px;height:98px;background-repeat:no-repeat;}
+.signin_ffpcblk{width:112px;height:100px;margin-top:7px;font-size:.7em;line-height:1.2em;color:#1D719D;}
+A{color:#1D719D;text-decoration:none;}
+A:hover{color:#3CAC19;text-decoration:underline;}
+.dl_boxtab{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/dl_box_245x19.gif);height:19px;width:245px;background-repeat:no-repeat;margin-top:1px;}
+.dl_box{height:51px;width:243px;background-color:#FAF1CD;border-left:1px solid #E9D0AF;border-right:1px solid #E9D0AF;border-bottom:1px solid #E9D0AF;font-size:.7em;padding-top:2px;}
+#.dl_box{height:51px;width:245px;background-color:#FAF1CD;border-left:1px solid #E9D0AF;border-right:1px solid #E9D0AF;border-bottom:1px solid #E9D0AF;font-size:.7em;padding-top:2px;}
+.shop_boxtab{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/shop_box_245x19.gif);width:245px;background-repeat:no-repeat;margin-top:6px;font-size:.7em;}
+.shop_img,.feat_img,.promo_img,#styleimg002{float:left;clear: both;margin-right:5px;border:0px;}
+.shop_content{height:67px;width:243px;color:#1D719D;margin-top:7px;padding-left:7px;}
+.shop_search{font-weight:normal;font-size:.9em;width:170px;}
+.about_box{margin-left:8px;margin-top:17px;color:#649C5B;font-size:.7em;}
+.about_2nd_col{margin-left:8px;margin-top:7px;width:112px;height:40px;}
+.sep{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/sep.gif);width:9px;}
+.center_forms{font-weight:normal;font-size:.9em;width:175px;}
+.bbpromo{font-weight:bold;font-size:.7em;}
+.todays_feature,.blue_tab{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/lightblu_box_210x19.gif);width:210px;background-repeat:no-repeat;margin-top:7px;font-size:.7em;}
+.feat_content,.STDTABLE{height:60px;width:210px;font-size:1em;}
+.yellow_tab{background-image:url(https://web.archive.org/web/20031005172504im_/http://cdn.aol.com/gr/personal_labels_210x19.gif);width:210px;background-repeat:no-repeat;margin-top:11px;font-size:.7em;}
+.center{padding-left:7px;}
+.hidden_form{font-size:.1em;height:0px;width:0px;overflow:hidden;}
+.promo_content,.stylediv001{height:197px;width:210px;font-size:.7em;margin-top:2px;}
+.dl_hdtxt{margin-top:5px;margin-left:8px;}
+.shop_hdtxt{margin-top:4px;margin-left:8px;}
+.feat_hdtxt{margin-top:2px;margin-left:8px;}
+.weather_hdtxt,.pf_hdtxt,.mobile_hdtxt{margin-top:4px;margin-left:8px;margin-bottom:5px;}
+.horos_hdtxt{margin-top:5px;margin-left:8px;margin-bottom:5px;}
+.instyle,#styleimg001{width:66px;height:16px;margin-bottom:2px;margin-top:1px;border:0px;}
+.txt_ad{margin-left:8px;font-weight:bold;font-size:.7em;color:#1D719D;}
+.ad1{margin-top:10px;margin-left:8px;}
+.ad2,.ad3{margin-top:15px;margin-left:22px;}
+/*
+     FILE ARCHIVED ON 17:25:04 Oct 05, 2003 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 09:58:37 Oct 26, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 1.741
+  LoadShardBlock: 701.402 (3)
+  exclusion.robots: 0.211
+  captures_list: 723.711
+  exclusion.robots.policy: 0.199
+  esindex: 0.014
+  CDXLines.iter: 15.042 (3)
+  PetaboxLoader3.datanode: 59.182 (4)
+  load_resource: 103.926
+  PetaboxLoader3.resolve: 736.726 (3)
+*/
